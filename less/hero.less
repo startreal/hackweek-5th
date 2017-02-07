@@ -1,0 +1,34 @@
+.Hero {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    &__item {
+        background: #212121 url(../img/bg.jpg) no-repeat 50% 0;
+        backface-visibility: hidden;
+
+        &--is {
+            &-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            &-front, &-static {
+                transition: transform .5s, opacity .5s;
+                transform-origin: 50% 60px;
+                transition-timing-function: cubic-bezier(.6, 0, .4, 1);
+            }
+
+            &-mover {
+                opacity: .7;
+                transition: transform .4s, opacity 0s .5s;
+            }
+        }
+    }
+}
+

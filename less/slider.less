@@ -1,0 +1,21 @@
+.Slider {
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    top: 0;
+    opacity: 0;
+    -webkit-touch-callout: none;
+    user-select: none;
+    transform: translate3d(0, 60vh, 0);
+    transition: transform .5s, opacity .5s;
+    transition-timing-function: cubic-bezier(.6, 0, .4, 1);
+
+    &__wrapper {
+        height: 100%;
+    }
+
+    @media screen and (max-height: 35em) {
+        height: 60vh;
+        transform: translate3d(0, 40vh, 0);
+    }
+}

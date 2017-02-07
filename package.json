@@ -1,0 +1,19 @@
+{
+  "name": "real-hackweek-5th",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-stylesheet": "./node_modules/.bin/lessc ./less/main.less css/main.css --autoprefix='> 1%, ie 10-11, last 3 version'"
+  },
+  "author": {
+    "name": "real",
+    "email": "startreal.org@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "bower": "^1.8.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

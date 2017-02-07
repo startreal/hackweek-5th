@@ -1,0 +1,41 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+@import "./general.less";
+
+body {
+    background: #212121;
+    color: #fff;
+    font-size: 1em;
+    overflow: hidden;
+    position: relative;
+    overflow-y: scroll;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+
+    &.active {
+        & > .Slider {
+            opacity: 1;
+        }
+
+        & > .Loader {
+            display: none;
+        }
+    }
+}
+
+@import "./hero.less";
+@import "./loader.less";
+@import "./slider.less";
+@import "./portfolio.less";
