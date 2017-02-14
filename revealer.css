@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 html,
 body {
 	min-height: 100vh;
@@ -166,30 +168,26 @@ body {
 	flex-direction: column;
 	height: 100%;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 960px;
 	padding: 1em;
-	-webkit-box-align: end;
-	-ms-flex-align: end;
-	align-items: flex-end;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 }
 
+.quote a {
+	text-align: center;
+}
+
 .quote p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Nanum Myeongjo', serif;
 	margin: 0 0 0.5em;
 	-webkit-box-flex: 0;
 	-ms-flex: none;
 	flex: none;
-}
-
-.quote p::before {
-	content: '\201C';
-}
-
-.quote p::after {
-	content: '\201D';
+	word-break: keep-all;
+	text-align: center;
+	font-weight: 500;
 }
 
 .quote footer {
@@ -399,6 +397,15 @@ body {
 
 .anim--effect-3 .page:nth-child(2) {
 	background: #ECF3A3;
+}
+
+.anim--effect-3 .page:nth-child(3) {
+	background: #ddd;
+}
+
+.anim--effect-3 .page:nth-child(4) {
+	background: #605BD4;
+	color: #fff;
 }
 
 .anim--effect-3 .revealer--animate .revealer__layer {

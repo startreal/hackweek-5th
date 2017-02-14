@@ -75,4 +75,22 @@
 
         revealer.reveal(direction, callbackTime, callbackFn);
     }
+
+    var carousel = document.querySelector('.carousel');
+
+    var flkty = new Flickity(carousel, {
+        // options
+        autoPlay: true,
+        wrapAround: true,
+        cellAlign: 'center',
+        initialIndex: 0,
+        setGallerySize: false,
+        pageDots: false,
+        arrowShape: {
+            x0: 10,
+            x1: 60, y1: 50,
+            x2: 70, y2: 40,
+            x3: 30
+        }
+    });
 })();

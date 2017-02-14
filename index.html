@@ -5,364 +5,107 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
+    <title>레알 5th HackWeek</title>
 
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="normalize-about.css" />
+    <link rel="stylesheet" href="revealer.css" />
     <link rel="stylesheet" href="bower_components/flickity/dist/flickity.min.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="about.css" />
+    <script src="js/modernizr-about.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <div class="hero__back hero__back--static"></div>
-            <div class="hero__back hero__back--mover"></div>
-            <div class="hero__front"></div>
-        </div>
+    <svg class="hidden">
+        <defs>
+            <symbol id="icon-arrow" viewBox="0 0 39 51.43">
+                <title>Arrow Left</title>
+                <polygon points="7 25.71 36 45.71 36 26.08 36 5.71 7 25.71" stroke-miterlimit="10" stroke-width="6"/><line x1="3" y1="5.71" x2="3" y2="45.71" fill="none" stroke-miterlimit="10" stroke-width="6"/>
+            </symbol>
+        </defs>
+    </svg>
 
-        <header class="header">
+    <main class="container">
+        <header id="header" class="header">
             <img src="img/logo.png" class="header__logo" alt="logo" />
             <h1>REAL 해커톤 Week</h1>
             <nav class="menu">
-                <a href="/about" class="menu__item">소개</a>
-                <a href="/" class="menu__item menu__item--current">포트폴리오</a>
+                <a href="/" class="menu__item menu__item--current">소개</a>
+                <a href="/portfolio" class="menu__item">포트폴리오</a>
                 <a href="http://startreal.org" class="menu__item">홈페이지</a>
             </nav>
         </header>
 
-        <div class="stack-slider">
-            <div class="stacks-wrapper">
-                <div class="stack">
-                    <h2 class="stack-title">
-                        <a href="#" data-text="RealCoder">
-                            <span>RealCoder</span>
-                        </a>
-                    </h2>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type1/1.jpg" alt="img01" />
-                            <h3 class="item__title">Hoodie stumptown kitsch <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
+        <div class="pages">
+            <div class="page page--current"><!-- intro page -->
+                <blockquote class="quote">
+                    <p>HackWeek은 실전 소프트웨어 창업동아리 레알의 동아리원들이 1주일 동안 팀을 이뤄 여러번의 해커톤을 진행하는 행사입니다.</p>
+                </blockquote>
+            </div>
+
+            <div class="page">
+                <blockquote class="quote">
+                    <p>매일 새로운 팀을 구성하며 개발자, 디자이너, 기획자가 서로의 스타일과 역량을 파악하고 각자 여러개의 작은 프로젝트를 완성하게 됩니다.</p>
+                </blockquote>
+            </div>
+
+            <div class="page">
+                <blockquote class="quote">
+                    <p>이번 제 5회 HackWeek은 1월 17일, 18일 그리고 20일부터 21일까지 총 3번의 해커톤이 이루어졌으며, 총 9개의 프로젝트가 진행되었습니다.</p>
+                </blockquote>
+            </div>
+
+            <div class="page">
+                <div class="carousel">
+                    <div class="carousel__item">
+                        <img src="img/hackweek3.jpeg" />
                     </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type1/2.jpg" alt="img02" />
-                            <h3 class="item__title">Retro irony sartorial <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div class="carousel__item">
+                        <img src="img/hackweek1.jpeg" />
                     </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type1/3.jpg" alt="img03" />
-                            <h3 class="item__title">Stumptown Brooklyn <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div class="carousel__item">
+                        <img src="img/hackweek5.jpeg" />
                     </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type1/4.jpg" alt="img04" />
-                            <h3 class="item__title">Blog dreamcatcher squid  <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div class="carousel__item">
+                        <img src="img/hackweek4.jpeg" />
                     </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type1/5.jpg" alt="img05" />
-                            <h3 class="item__title">Meditation pickled mumblecore <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                            <p>Images by <a href="https://www.flickr.com/photos/martinaphotography/">martinak15</a></p>
-                        </div>
+
+                    <div class="carousel__item">
+                        <img src="img/hackweek2.jpeg" />
                     </div>
-                </div>
-                <div class="stack">
-                    <h2 class="stack-title"><a href="#" data-text="Landscape"><span>Landscape</span></a></h2>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type3/1.jpg" alt="img01" />
-                            <h3 class="item__title">Austin flannel salvia <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
+
+                    <div class="carousel__item">
+                        <img src="img/hackweek6.jpeg" />
                     </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type3/2.jpg" alt="img02" />
-                            <h3 class="item__title">Brunch vegan pickled cred <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type3/3.jpg" alt="img03" />
-                            <h3 class="item__title">Blog dreamcatcher squid  <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type3/4.jpg" alt="img04" />
-                            <h3 class="item__title">Migas intelligentsia meh <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type3/5.jpg" alt="img05" />
-                            <h3 class="item__title">Authentic locavore meditation <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                            <p>Images by <a href="https://www.flickr.com/photos/56218409@N03/">Matthias Ripp</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="stack">
-                    <h2 class="stack-title"><a href="#" data-text="Miscellaneous"><span>Miscellaneous</span></a></h2>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type2/1.jpg" alt="img01" />
-                            <h3 class="item__title">Chambray fingerstache <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type2/2.jpg" alt="img02" />
-                            <h3 class="item__title">Chia pop-up meh <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type2/3.jpg" alt="img03" />
-                            <h3 class="item__title">Butcher organic ennui <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type2/4.jpg" alt="img04" />
-                            <h3 class="item__title">Four loko slow-carb Austin <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type2/5.jpg" alt="img05" />
-                            <h3 class="item__title">Biodiesel freegan cardigan <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                            <p>Images by <a href="https://www.flickr.com/photos/deanhochman/">Dean Hochman</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="stack">
-                    <h2 class="stack-title"><a href="#" data-text="Wildlife"><span>Wildlife</span></a></h2>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type4/1.jpg" alt="img01" />
-                            <h3 class="item__title">Kickstarter keffiyeh <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type4/2.jpg" alt="img02" />
-                            <h3 class="item__title">Heirloom commodo migas <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type4/3.jpg" alt="img03" />
-                            <h3 class="item__title">Austin banjo swag <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type4/4.jpg" alt="img04" />
-                            <h3 class="item__title">Small batch farm-to-table <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__content">
-                            <img src="img/type4/5.jpg" alt="img05" />
-                            <h3 class="item__title">Ethical leggings semiotics <span class="item__date">05/05/2015</span></h3>
-                            <div class="item__details">
-                                <ul>
-                                    <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-                                    <li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-                                    <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-                                    <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-                                    <li><i class="icon icon-iso"></i><span>80</span></li>
-                                </ul>
-                            </div>
-                            <p>Images by <a href="https://www.flickr.com/photos/usfwsendsp/">USFWS Endangered Species</a></p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-            <!-- /stacks-wrapper -->
-        </div>
-        <!-- /stacks -->
-        <img class="loader" src="img/loading.svg" width="60" alt="Loader image" />
-    </div>
 
-    <script src="bower_components/promise-polyfill/promise.min.js"></script>
+            <div class="page">
+                <blockquote class="quote">
+                    <p>이번 HackWeek은 서로의 "스타일"을 알아갈 수 있는 좋은 기회였습니다. 서로에 대한 파악은 앞으로 있을 창업 프로젝트를 진행을 위한 팀 빌딩에 있어 큰 도움이 되었다고 생각합니다.</p>
+                </blockquote>
+            </div>
+
+
+            <div class="page">
+                <blockquote class="quote">
+                    <p>앞으로도 꾸준히 매 기수마다 HackWeek이 진행될 예정입니다. 많은 관심과 참여 부탁드립니다.</p>
+                    <a href="/portfolio" class="seeMoreButton">포트폴리오 보기</a>
+                    <a href="http://startreal.org/" class="seeMoreButton">홈페이지</a>
+                </blockquote>
+            </div>
+        </div>
+
+        <nav class="pagenav">
+            <button id="topBottom" class="pagenav__button pagenav__button--bottom" aria-label="Navigate bottom"><svg class="icon icon--rbottom"><use xlink:href="#icon-arrow"></use></svg></button>
+        </nav>
+    </main>
+
     <script src="bower_components/classie/classie.js"></script>
     <script src="bower_components/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script src="js/revealer.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>

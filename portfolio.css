@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 /* Helpers & resets */
 *,
@@ -25,7 +27,7 @@ body {
     overflow: hidden;
     position: relative;
     overflow-y: scroll;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -524,6 +526,7 @@ button:focus {
     position: relative;
     z-index: 100;
     max-width: 800px;
+    display: block;
     margin: 0 auto;
 }
 
@@ -581,14 +584,64 @@ button:focus {
 }
 
 .item__details {
+    display: block;
     text-align: left;
     margin: 0 0 2em;
 }
 
+.item__details blockquote {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 1.5em 0;
+    letter-spacing: -1px;
+}
+
+blockquote p:before, blockquote p:after {
+    color: #9d9d9d;
+    content: '”';
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.3em;
+}
+
+blockquote p:before {
+    content: '“';
+    vertical-align: -.25em;
+    margin-right: .15em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.item__content iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+.item__details p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #9d9d9d;
+}
+
+.item__details h3 {
+    margin: 1.5em 0 .5em 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+}
+
 .item__details ul {
-    font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     list-style: none;
-    margin: 0;
+    margin: 0 0 1.25em 0;
     padding: 0;
 }
 
@@ -602,6 +655,19 @@ button:focus {
     transform: translate3d(0,20px,0);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+}
+
+.item__details ul li label {
+    display: inline-block;
+    margin-right: 4px;
+    color: #7E7D7D;
+    font-weight: 500;
+}
+
+.item__details ul li span {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
 }
 
 .move-items .is-selected .item__details ul li {
@@ -633,11 +699,6 @@ button:focus {
 .move-items .is-selected .item__details ul li:nth-child(5) {
     -webkit-transition-delay: 0.45s;
     transition-delay: 0.45s;
-}
-
-.item__details ul li:first-child {
-    font-weight: bold;
-    color: #ef5350;
 }
 
 .icon {
@@ -734,16 +795,7 @@ button:focus {
 }
 
 /* Mobile-first media queries */
-@media screen and (min-width: 65em) {
-    .item__details {
-        position: absolute;
-        top: 0;
-        margin: 0 0 0 1em;
-        z-index: 1000;
-        left: 100%;
-        width: 40%;
-    }
-}
+
 
 /* Mobile-specific media queries */
 @media screen and (max-width: 65em) {
